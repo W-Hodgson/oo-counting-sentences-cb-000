@@ -15,6 +15,9 @@ class String
   end
 
   def count_sentences
-
+    full_stops = self.count('.')
+    exclamation_marks = self.count('!')
+    question_marks = self.count('?')
+    full_stops + exclamation_marks + question_marks
   end
 end
